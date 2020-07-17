@@ -11,10 +11,22 @@ hr{
   width: 5%;
 }
 
+p{
+  color:turquoise;
+}
+
 h1{
-  color:whitesmoke;
+  color:turquoise;
 }
 
 h3{
-  color:whitesmoke;
+  color:turquoise;
+}
+
+table{
+  color:turquoise;
+}
+
+li{
+  color:turquoise;
 }

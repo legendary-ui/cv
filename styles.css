@@ -3,6 +3,10 @@ body{
   background-image:url(https://img.wallpapersafari.com/desktop/1920/1080/28/66/sOByYz.jpg);
 }
 
+.TheWholePage{
+  color: turquoise;
+}
+
 hr{
   border-color: whitesmoke;
   border-style: none;
@@ -11,7 +15,7 @@ hr{
   width: 5%;
 }
 
-p{
+/*p{
   color:turquoise;
 }
 
@@ -29,4 +33,4 @@ table{
 
 li{
   color:turquoise;
-}
+} */

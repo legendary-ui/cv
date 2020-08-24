@@ -1,153 +1,303 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <section id="title" class="colored-section">
+
+      <div class="container-fluid">
+
+        <!-- navigation Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">Apex</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">Download</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading-title">Get your own personalized and proffesionally built website.</h1>
+            <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"> </i> Download</button>
+            <button type="button" class="btn btn-lg btn-outline-light download-button"><i class="fab fa-google-play"></i> Download</button>
+          </div>
+          <div class="col-lg-6">
+            <img class="title-image" src="https://puentedigital.com/uploads/IMG_GR_servicios1510842962.jpg" alt="Technological png">
+          </div>
+        </div>
+
+      </div>
 
 
-<head>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features" class="white-section">
+      <div class="container-fluid">
+        <div class="row">
+
+          <div class="feature-box col col-lg-4">
+            <i class="icon fas fa-check-circle fa-4x"></i>
+            <h3 class="feature-title">Easy to colaborate.</h3>
+            <p>Contact me whenever you like!</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-bullseye fa-4x"></i>
+            <h3 class="feature-title">Elite Clientele</h3>
+            <p>We have all the code, the greatest codes.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fas fa-heart fa-4x"></i>
+            <h3 class="feature-title">Guaranteed satisfaction.</h3>
+            <p>Get satified by our work or get your money back.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Feedbacks -->
+
+    <section id="testimonials" class="colored-section">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">Nice work, really satified with your outcome!</h2>
+            <img class="testimonial-image" src="" alt="">
+            <em>AnounymousClassmate, Tokyo</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">Not Bad, just wondering why you arent employed yet...</h2>
+            <img class="testimonial-image" src="" alt="">
+            <em>AnounymousFriend, Tokyo</em>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- Press -->
+
+    <section id="press" class="colored-section">
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+    </section>
+
+    <!-- Teams -->
+
+    <section id="members" class="white-section">
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Anounymouus</h3>
+            </div>
+            <div class="left-align">
+              <h2>Capabilities:</h2>
+              <p>HTML ⭐⭐⭐⭐⭐</p>
+              <p>CSS ⭐⭐⭐⭐⭐</p>
+              <p>Bootstrap ⭐⭐⭐⭐⭐ </p>
+              <p>Javascript ⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Advanced</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">$15 / Website</h2>
+              <p>10 Options Per Website</p>
+              <p>Unlimited Messages</p>
+              <p>Gaurenteed to Finish Before 2 Months</p>
+              <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h3>Pro</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">$20 / Website</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Gaurenteed to Finish Before 1 Month!</p>
+              <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid white-section">
+        <div class="">
+          <h3>M.Mohamed Murshid</h3>
+        </div>
+        <div class="">
+          <table>
+            <tr>
+              <h6>Capabilities:</h6>
+            </tr>
+            <tr>
+              <p>HTML</p>
+              <p>⭐⭐⭐⭐⭐</p>
+            </tr>
+            <tr>
+              <p>CSS</p>
+              <p>⭐⭐⭐⭐⭐</p>
+            </tr>
+            <tr>
+              <p>Bootstrap</p>
+              <p>⭐⭐⭐⭐⭐</p>
+            </tr>
+            <tr>
+              <p>Javascript</p>
+              <p>⭐⭐⭐⭐</p>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Pricing -->
+
+    <section id="pricing" class="white-section">
+
+      <h2 class="section-heading">A Plan for Every Customer's Needs</h2>
+      <p>Simple and affordable price plans for you.</p>
+
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Starter</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">Free</h2>
+              <p>5 Options Per Website</p>
+              <p>10 Messages Per Day</p>
+              <p>Gaurenteed to Finish Before 4 Months </p>
+              <p><em>Please note that this is a one time deal</em></p>
+              <button type="button" class="btn btn-outline-dark btn-lg btn-block">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Advanced</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">$15 / Website</h2>
+              <p>10 Options Per Website</p>
+              <p>Unlimited Messages</p>
+              <p>Gaurenteed to Finish Before 2 Months</p>
+              <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-column col-lg-4 col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h3>Pro</h3>
+            </div>
+            <div class="card-body">
+              <h2 class="pricing-text">$20 / Website</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Gaurenteed to Finish Before 1 Month!</p>
+              <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-  <meta charset="utf-8">
-  <meta name="description" content="My first professionally guided website">
-  <title>My personal Website</title>
+    </section>
 
-  <link rel="stylesheet" href="styles.css">
-  
-  <!--  <style>
-    body{
+    <!-- Call to Action -->
 
-  background-image:url(https://img.wallpapersafari.com/desktop/1920/1080/28/66/sOByYz.jpg);
-}
+    <section id="cta" class="colored-section">
 
-.TheWholePage{
-  color: turquoise;
-}
-  </style>
- <style>
-    hr{
-  border-color: whitesmoke;
-  border-style: none;
-  border-top-style: dotted;
-  border-width: 5px;
-  width: 5%;
-}
+      <div class="container-fluid">
+        <h3 class="big-heading jsTextChange">Get Started with Your own Website Made with Love and Care Today.</h3>
+        <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"> </i> Download</button>
+        <button type="button" class="btn btn-lg btn-light download-button"><i class="fab fa-google-play"></i> Download</button>
+      </div>
 
-p{
-  color:turquoise;
-}
+    </section>
 
-h1{
-  color:turquoise;
-}
+    <!-- Footer -->
 
-h3{
-  color:turquoise;
-}
+    <footer id="footer" class="white-section">
 
-table{
-  color:turquoise;
-}
+      <div class=" container-fluid">
+        <i class="social-icon fab fa-facebook-f"></i>
+        <i class="social-icon fab fa-twitter"></i>
+        <i class="social-icon fab fa-instagram"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        <p>© Copyright 2020 Apex</p>
+      </div>
 
-li{
-  color:turquoise;
-}
-  </style>   -->
-  
-</head>
+    </footer>
 
-<body style="background-image:url(https://img.wallpapersafari.com/desktop/1920/1080/28/66/sOByYz.jpg)">
+    <script src="Javascript/index.js" charset="utf-8"></script>
 
-  <div class="TheWholePage">
-
-  <table cellspacing="20">
-
-    <tr>
-      <td>
-        <img src="https://itbrief.co.nz/uploads/story/2014/12/05/suppression.jpg" alt="Anounymous Profile" height="200px;"  width="300px;">
-      </td>
-      <td>
-        <h1>M.Mohammed Murshid</h1>
-        <em>8th grade student, <strong>beginner programmer</strong></em>
-        <hr>
-        I am a new programmer who seeks to become a professional programmer just for the fun of it, but that may change in the near future.
-        <hr>
-      </td>
-    </tr>
-  </table>
-
-  <br>
-
-  <p>If you want to know about me more, contact me at <a href="contacts.html" target="_blank">contacts.html</a></p>
-
-  <br>
-
-  <h3>What I know so far..</h3>
-
-  <ol type="1">
-    <li>meta tag</li>
-    <li>h1..6 tags</li>
-    <li>b/strong/em/i tags</li>
-    <li>BoilerPlates(html,body,head tags)</li>
-    <li>well, there is a lot of tags in html, so i think i might add a link to a separate page...</li>
-  </ol>
-
-  <hr>
-
-  <h3>My other websites</h3>
-
-  <p>Before I started taking legit tutorials for programming, I went a little too enthusiastically and basically made a bunch of stupid mini-websites, and Im goning to link them below to see how bad and poorly they are made.</p>
-
-  <ul>
-    <li><a href="file:///C:/Users/moham/Desktop/DHTML%20MTE/WebDevTST/the%20new%20car%20show%20site.html" target="_blank">link 1(A car site)</a></li>
-    <li><a href="file:///C:/Users/moham/Desktop/DHTML%20MTE/WebDevTST/the%20trolling%20page2.html" target="_blank">link 2(A test site)</a></li>
-    <li><a href="file:///C:/Users/moham/Desktop/DHTML%20MTE/WebDevTST/the%20trolling%20page%20.html" target="_blank">link 3(a troll site, you have been warned)</a></li>
-  </ul>
-
-  <hr>
-
-  <h3>Speed cubing</h3>
-
-  <p>here is all my timings and improvements in cubing over the years</p>
-
-  <table border="1">
-
-    <thead>
-      <tr>
-        <th>Year</th>
-        <th>description</th>
-        <th>solve time</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>2019(beginning)</td>
-        <td>My first solve</td>
-        <td>a little over 1min</td>
-      </tr>
-      <tr>
-        <td>2019(ending)</td>
-        <td>started to understand the cube</td>
-        <td>a little over 50sec</td>
-      </tr>
-      <tr>
-        <td>2020(beginning)</td>
-        <td>started making my own shortcuts</td>
-        <td>a little over 40sec</td>
-      </tr>
-      <tr>
-        <td>2020(midway)</td>
-        <td>started to practice and train muscle memory</td>
-        <td>a little over 30sec</td>
-      </tr>
-    </tbody>
-
-  </table>
-
-  <hr>
-  <p>now if you also want to know how to solve a rubix cube, then go to <a href="how to solve a rubix cube.html" taget="_blank">how to solve a rubix cube.html</a>
-  </div>
-  
-</body>
-
-
+  </body>
 </html>
-

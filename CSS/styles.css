@@ -12,10 +12,20 @@ P{
   color: #8f8f8f;
 }
 
+td{
+  padding-right: 50px;
+}
 
+hr{
+  color: red;
+  border-style: dotted;
+  border-top: none;
+  height: 5px;
+  width: 10%
+}
 
 /* Heading */
-.big-heading-title{
+.big-heading-min{
   font-weight: 900;
   font-size: 2.5rem;
   line-height: 1.5;
@@ -31,6 +41,7 @@ P{
   font-size: 3rem;
   line-height: 1.5;
 }
+
 
 /* Containers */
 
@@ -192,11 +203,52 @@ P{
   text-align: left;
 }
 
+.outline-member{
+  padding: 50px 20px;
+}
+
+.member-heading{
+  padding-bottom: 20px;
+}
+
+
+/* info */
+
+.info-adjust{
+  padding:3% 0%
+}
+
+/* Post Review Section */
+
+.inline{
+  display: inline;
+}
+
+.block{
+  display: block;
+}
+
+.review-input{
+  padding-bottom: 1rem;
+}
+
+.review-adjust{
+  padding: 4rem 14rem;
+}
+
+.review-text-adjust{
+  width: 335px;
+}
 /* Footer Section */
 
 #cta .big-heading{
   font-size: 3rem;
 }
+
+#footer-adjust{
+  padding-top: 0px;
+}
+
 /* #footer{
   padding: 7% 15%;
   text-align: center;

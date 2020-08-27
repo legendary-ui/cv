@@ -17,6 +17,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+
+    <link rel="icon" href="favicon/myFavicon.ico">
   </head>
   <body>
 
@@ -50,7 +54,7 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <h1 class="big-heading-title">Get your own personalized and proffesionally built website.</h1>
+            <h1 class="big-heading-min">Get your own personalized and proffesionally built website.</h1>
             <button type="button" class="btn btn-lg btn-dark download-button"><i class="fab fa-apple"> </i> Download</button>
             <button type="button" class="btn btn-lg btn-outline-light download-button"><i class="fab fa-google-play"></i> Download</button>
           </div>
@@ -97,7 +101,7 @@
 
     <section id="testimonials" class="colored-section">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner jsCarousel">
           <div class="carousel-item active container-fluid">
             <h2 class="testimonial-text">Nice work, really satified with your outcome!</h2>
             <img class="testimonial-image" src="" alt="">
@@ -124,11 +128,91 @@
     <!-- Press -->
 
     <section id="press" class="colored-section">
-      <img class="press-logo" src="images/TechCrunch.png" alt="tc-logo">
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
       <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
       <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
       <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
 
+    </section>
+
+    <!-- Teams -->
+
+    <section id="members" class="white-section">
+      <div class="container-fluid">
+        <h1 class="member-heading">Our Members and Teams:</h1>
+        <div class="row card-deck">
+          <div class="column col-lg-4 col-md-6 outline-member card">
+            <h5 class="member-heading">Anounymous</h5>
+            <div class="left-align">
+              <p>Capabilities:</p>
+              <table>
+                <tr>
+                  <td><p>HTML</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+                <tr>
+                  <td><p>CSS</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+                <tr>
+                  <td><p>Javascript</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="column col-lg-4 col-md-6 outline-member card">
+            <h5 class="member-heading">Murshid</h5>
+            <div class="align">
+              <p>Capabilities:</p>
+              <table>
+                <tr>
+                  <td><p>HTML</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+                <tr>
+                  <td><p>CSS</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+                <tr>
+                  <td><p>Javascript</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="column col-lg-4 col-md-12 outline-member card">
+            <h5 class="member-heading">Anounymous</h5>
+            <div class="left-align">
+              <p>Capabilities:</p>
+              <table>
+                <tr>
+                  <td><p>HTML</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+                <tr>
+                  <td><p>CSS</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+                <tr>
+                  <td><p>Javascript</p></td>
+                  <td><p>⭐⭐⭐⭐⭐</p></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- info -->
+    <section id="info" class="colored-section">
+      <div class="container-fluid">
+        <div class="info-adjust">
+          <h3 class="big-heading">Hire Programmers to Make Your Website or Make it Yourself !</h3>
+        </div>
+      </div>
     </section>
 
     <!-- Pricing -->
@@ -202,16 +286,49 @@
 
     </section>
 
+    <!-- Reviews -->
+
+    <section id="review" class="white-section">
+
+      <div class="container-fluid">
+
+        <h2 class="big-heading">Tell us What You Think!</h2>
+        <div class="left-align review-adjust">
+
+          <div class="block review-input">
+            <p class="inline">Your Name:   </p><input type="text" class="jsReviewName review-text-adjust">
+          </div>
+
+          <div class="block review-input">
+            <p class="inline">Your Email:   </p><input class="review-text-adjust" type="Email">
+          </div>
+
+          <div class="block review-input">
+            <p class="inline">Your Review:   </p><textarea name="name" class="jsReview" rows="3" cols="45"></textarea>
+          </div>
+
+        </div>
+
+        <input type="button" class="btn btn-lg btn-outline-primary jsSubmitReview" value="Submit Review">
+
+      </div>
+      
+      <P><em>this is a work in progress, please understand</em></P>
+
+    </section>
+
+    <hr>
+
     <!-- Footer -->
 
     <footer id="footer" class="white-section">
 
-      <div class=" container-fluid">
+      <div class="container-fluid" id="footer-adjust">
         <i class="social-icon fab fa-facebook-f"></i>
         <i class="social-icon fab fa-twitter"></i>
         <i class="social-icon fab fa-instagram"></i>
         <i class="social-icon fas fa-envelope"></i>
-        <p>© By Mohamed Murshid</p>
+        <p>© Copyright 2020 Apex</p>
       </div>
 
     </footer>

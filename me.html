@@ -35,8 +35,17 @@
         padding-left: 125px;
       }
 
+      table p{
+        color: white;
+      }
+
+      .jsAddedContentAboutMe{
+        position: absolute;
+        visibility: hidden;
+      }
+
     </style>
-    
+
   </head>
   <body>
 <section id="title" class="colored-section">
@@ -59,7 +68,7 @@
                 <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#add-content">Hobbies</a>
+                <a class="nav-link" href="#add-content">More</a>
               </li>
             </ul>
           </div>
@@ -74,13 +83,14 @@
             <button type="button" class="btn btn-lg btn-outline-light download-button"><i class="fas fa-mobile-alt"></i> iphone Mode</button>
           </div>
           <div class="col-lg-6 me-title-img-adjust">
-            <img class="me-title-img" src="galaxy_fire_water.jpg" alt="anounymous-png">
+            <img class="me-title-img" src="images\galaxy_fire_water.jpg" alt="anounymous-png">
           </div>
         </div>
       </div>
 
     </section>
 
+<!-- Capabilities -->
 
     <section class="white-section" id="skills">
 
@@ -107,11 +117,16 @@
 
     </section>
 
+    <!-- short description -->
+
     <section class="colored-section">
       <div class="container-fluid">
         <h2 class="big-heading">Hi There! My name is M.Mohamed Murshid and I'm an 8th Grade Student.</h2>
       </div>
     </section>
+
+
+    <!-- js add content buttons -->
 
     <section class="white-section" id="add-content">
       <div class="container-fluid">
@@ -119,19 +134,77 @@
         <div class="row">
           <div class="feature-box col col-lg-4 col-md-6">
             <h3 class="feature-title">Hobbies</h3>
-            <button type="button" name="button" class="btn btn-lg btn-outline-danger">Click Me to See!</button>
+            <button type="button" name="button" class="btn btn-lg btn-outline-danger jsAddContentAboutMe">See My Hobbies!</button>
           </div>
           <div class="feature-box col col-lg-4 col-md-6">
             <h3 class="feature-title">Contacts</h3>
-            <button type="button" name="button" class="btn btn-lg btn-outline-primary">Click Me to See!</button>
+            <button type="button" name="button" class="btn btn-lg btn-outline-primary jsAddContentAboutMe">See My Contacts!</button>
           </div>
           <div class="feature-box col col-lg-4 col-md-12">
             <h3 class="feature-title">Skills</h3>
-            <button type="button" name="button" class="btn btn-lg btn-outline-success">Click Me to See!</button>
+            <button type="button" name="button" class="btn btn-lg btn-outline-success jsAddContentAboutMe">See My Skills!</button>
           </div>
         </div>
       </div>
     </section>
+
+<!-- js added content -->
+
+    <section class="colored-section  ">
+      <div class="container-fluid jsAddedContentAboutMe">
+        <div class="added-content addedContentHobbies">
+          <h3 class="section-heading">Some of My Hobbies Are...</h3>
+          <h6 class="left-align" style="font-size:2rem; padding-top:50px;">Speed Cubing</h6>
+          <h5 class="left-align" style="font-size:2rem;">Solving Logical Problems</h5>
+          <h5 class="left-align" style="font-size:2rem;">Programming</h5>
+          <h5 class="left-align" style="font-size:2rem;">Gaming</h5>
+          <h5 class="left-align" style="font-size:1.8rem;">Tearing Apart other Good Looking Website to Learn from Them</h5>
+        </div>
+        <div class="added-content addedContentContacts">
+          <h3 class="section-heading">Here is My Complete Personal Info:</h3>
+          <h6 class="left-align" style="font-size:2rem; padding-top:50px;">I am an 8th Grade Student</h6>
+          <h5 class="left-align" style="font-size:2rem;">Who Lives in Japan, Tokyo</h5>
+          <h5 class="left-align" style="font-size:2rem;">and Wants To Start a Company of My Own</h5>
+          <h5 class="left-align" style="font-size:2rem;">While Wanting to Be a Full-Stack Programmer</h5>
+        </div>
+        <div class="added-content addedContentSkills">
+          <h3 class="section-heading">My Programming Levels...</h3>
+          <h6 class="left-align" style="font-size:2rem; padding-top:50px;">
+
+            <table>
+              <tr>
+                <td>
+                  <p>HTML</p>
+                </td>
+                <td>
+                  <p>⭐⭐⭐⭐⭐</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>CSS</p>
+                </td>
+                <td>
+                  <p>⭐⭐⭐⭐⭐</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Javascript</p>
+                </td>
+                <td>
+                  <p>⭐⭐⭐⭐⭐</p>
+                </td>
+              </tr>
+            </table>
+
+          </h6>
+
+        </div>
+      </div>
+    </section>
+
+    <button type="button" name="button" id="jsPasswordCheck">Premium Discord Users(Specified people)</button>
 
     <footer id="footer" class="white-section">
 
@@ -145,7 +218,8 @@
 
     </footer>
 
-    <script src="Javascript/index.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Javascript/me.js" charset="utf-8"></script>
 
   </body>
 </html>

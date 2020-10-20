@@ -4,7 +4,7 @@
 $("#jsPasswordCheck").click(function(){
   var givenPassword = prompt("Enter Password");
   if (givenPassword == "123"){
-    window.location.href = "file:///C:/Users/moham/Desktop/FullStackWeb/discord.html"
+    window.location.href = "https://legendary-ui.github.io/cv/discord.html"
   } else{
     alert("access denied")
   }

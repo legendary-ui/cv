@@ -84,11 +84,23 @@ overlay.addEventListener("click", function() {
 
 document.querySelector(".html.neon-switch").click()
 
-// Smooth sliding navbar
+// hiding navbar on scroll down, show navbar on scroll up
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector(".navbar").style.top = "0";
+  } else {
+    document.querySelector(".navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+// Smooth sliding navbar Links
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+    }, 700);
 });

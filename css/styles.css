@@ -158,6 +158,7 @@ section {
   .navbar-menu.active {
     background: #2424242;
     top: 100%;
+    width: 100%;
     opacity: 1;
     transition: all 0.5 as ease;
     z-index: 99;

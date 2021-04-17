@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Apex Ultima</title>
+  <title>Apex </title>
   <meta name="description" content="Apex is a Fake Company made by a Student called M.Mohamed Murshid. Apex is a Company that lets You to Make Your own Website. With Apex Ultima being the next version, you can hire programmers for cheap to make your websites too! Read the website for more!">
 
   <!-- Google Fonts -->
@@ -15,16 +15,13 @@
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-  
-  <!-- favicon -->
-  <!-- <link rel="icon" href="favicon/myFavicon.ico"> -->
 
   <!-- Bootstrap Scripts -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-  <!--  jQuery  -->
+
+  <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
@@ -35,7 +32,7 @@
   <nav class="navbar">
     <div class="navbar-container">
 
-      <a href="index.html" id="navbar-logo">Apex Ultima</a>
+      <a href="https://legendary-ui.github.io/cv/index.html" id="navbar-logo">Apex Ultima</a>
 
       <div class="navbar-toggle" id="mobile-menu">
         <span class="bar"></span>
@@ -54,12 +51,13 @@
           <a target="_blank" href="https://legendary-ui.github.io/cv/me.html" class="navbar-links">Founder</a>
         </li>
         <li class="navbar-item">
-          <div class="center-wrapper" style="height:90%">
+          <a href="https://legendary-ui.github.io/cv/index-version-2.html" class="navbar-links">Version.2.0</a>
+          <!-- <div class="center-wrapper" style="height:90%">
             <select class="navbar-links" name="" onchange="window.document.location.href = this.options[this.selectedIndex].value;">
-              <option value="https://legendary-ui.github.io/cv/">Version.2.0</option>
-              <option value="https://legendary-ui.github.io/cv/index-version-2.html">Version.1.0</option>
+              <option value="">Version.2.0</option>
+              <option value="https://legendary-ui.github.io/cv/">Version.1.0</option>
             </select>
-          </div>
+          </div> -->
         </li>
         <li class="navbar-btn"><a class="button btn btn-outline-primary btn-lg" href="#footer">Contact</a></li>
       </ul>
@@ -144,101 +142,97 @@
 
     <h3 class="big-heading center-wrapper">What We Can Do...</h3>
 
-    <div style="padding: 20px 0 0;">
-
-      <div class="row">
-        <div class="skill-box-button col col-lg-3">
-          <div class="skill-box">
-            <input class="description-btn html neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
-          </div>
-          <div class="skill-box">
-            <input class="description-btn css neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
-          </div>
-          <div class="skill-box">
-            <input class="description-btn javascript neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
-          </div>
+    <div class="row">
+      <div class="skill-box-button col col-lg-3">
+        <div class="skill-box">
+          <input class="description-btn html neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
         </div>
-
-        <div class="skill-box-button col col-lg-3">
-          <div class="skill-box">
-            <input class="description-btn sql neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
-          </div>
-          <div class="skill-box">
-            <input class="description-btn python neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
-          </div>
-          <div class="skill-box">
-            <input class="description-btn java neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
-          </div>
+        <div class="skill-box">
+          <input class="description-btn css neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
         </div>
+        <div class="skill-box">
+          <input class="description-btn javascript neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
+        </div>
+      </div>
 
-        <div class="skill-box-description col col-lg-6">
-          <div class="skill html">
-            <div class="skill-wrapper">
-              <img class="skill-description-image" src="images/html.PNG" alt="Not found">
-              <div class="skill-description-content">
-                <i class="far fa-file-code icon fa-4x"></i>
-                <h3 class="feature-title">HTML</h3>
-                <p>Structure websites with easily understood coding.</p>
-              </div>
-            </div>
-          </div>
+      <div class="skill-box-button col col-lg-3">
+        <div class="skill-box">
+          <input class="description-btn sql neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
+        </div>
+        <div class="skill-box">
+          <input class="description-btn python neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
+        </div>
+        <div class="skill-box">
+          <input class="description-btn java neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
+        </div>
+      </div>
 
-          <div class="skill css" hidden>
-            <div class="skill-wrapper">
-              <img class="skill-description-image" src="images/css.PNG" alt="Not found">
-              <div class="skill-description-content">
-                <i class="fab fa-staylinked icon fa-4x"></i>
-                <h3 class="feature-title">CSS</h3>
-                <p>Make Your Website look Proffesional.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill javascript" hidden>
-            <div class="skill-wrapper">
-              <img class="skill-description-image" src="images/javascript.PNG" alt="Not found">
-              <div class="skill-description-content">
-                <i class="fab fa-js icon fa-4x"></i>
-                <h3 class="feature-title">Javascript</h3>
-                <p>Make Your Website Interactive and User-friendly.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill sql" hidden>
-            <div class="skill-wrapper">
-              <img class="skill-description-image" src="" alt="Not found">
-              <div class="skill-description-content">
-                <i class="fab fa-python icon fa-4x"></i>
-                <h3 class="feature-title">mySQL</h3>
-                <p>A structured Query language that stores all your data.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill python" hidden>
-            <div class="skill-wrapper">
-              <img class="skill-description-image" src="" alt="Not found">
-              <div class="skill-description-content">
-                <i class="fab fa-python icon fa-4x"></i>
-                <h3 class="feature-title">Python</h3>
-                <p>An All-Rounder programming Language, where you can make AI too.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="skill java" hidden>
-            <div class="skill-wrapper">
-              <img class="skill-description-image" src="" alt="Not found">
-              <div class="skill-description-content">
-                <i class="fab fa-java icon fa-4x"></i>
-                <h3 class="feature-title">Java</h3>
-                <p>The Backend Language that is Fast, Secure and Reliable to use.</p>
-              </div>
+      <div class="skill-box-description col col-lg-6">
+        <div class="skill html">
+          <div class="skill-wrapper">
+            <img class="skill-description-image" src="images/html.PNG" alt="Not found">
+            <div class="skill-description-content">
+              <i class="far fa-file-code icon fa-4x"></i>
+              <h3 class="feature-title">HTML</h3>
+              <p>Structure websites with easily understood coding.</p>
             </div>
           </div>
         </div>
 
+        <div class="skill css" hidden>
+          <div class="skill-wrapper">
+            <img class="skill-description-image" src="images/css.PNG" alt="Not found">
+            <div class="skill-description-content">
+              <i class="fab fa-staylinked icon fa-4x"></i>
+              <h3 class="feature-title">CSS</h3>
+              <p>Make Your Website look Proffesional.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill javascript" hidden>
+          <div class="skill-wrapper">
+            <img class="skill-description-image" src="images/javascript.PNG" alt="Not found">
+            <div class="skill-description-content">
+              <i class="fab fa-js icon fa-4x"></i>
+              <h3 class="feature-title">Javascript</h3>
+              <p>Make Your Website Interactive and User-friendly.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill sql" hidden>
+          <div class="skill-wrapper">
+            <img class="skill-description-image" src="" alt="Not found">
+            <div class="skill-description-content">
+              <i class="fab fa-python icon fa-4x"></i>
+              <h3 class="feature-title">mySQL</h3>
+              <p>A structured Query language that stores all your data.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill python" hidden>
+          <div class="skill-wrapper">
+            <img class="skill-description-image" src="" alt="Not found">
+            <div class="skill-description-content">
+              <i class="fab fa-python icon fa-4x"></i>
+              <h3 class="feature-title">Python</h3>
+              <p>An All-Rounder programming Language, where you can make AI too.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill java" hidden>
+          <div class="skill-wrapper">
+            <img class="skill-description-image" src="" alt="Not found">
+            <div class="skill-description-content">
+              <i class="fab fa-java icon fa-4x"></i>
+              <h3 class="feature-title">Java</h3>
+              <p>The Backend Language that is Fast, Secure and Reliable to use.</p>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -420,7 +414,7 @@
             </a>
           </div>
 
-          <p class="website__rights">©Apex 2021. All rights reserved</p>
+          <p class="website__rights">©Apex 2020 & Evnotion 2021. All rights reserved</p>
 
           <div class="social__icons">
             <a href="/" class="social__icon--link" target="_blank">

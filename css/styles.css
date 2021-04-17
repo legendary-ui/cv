@@ -11,7 +11,8 @@ body {
 }
 
 section {
-  margin: 15px 0;
+  max-width: 1329px;
+  margin: 50px 0;
 }
 
 /* common */
@@ -601,14 +602,20 @@ section {
   width: 100%;
   z-index: -1;
 } */
+
 #skills {
   text-align: center;
   position: relative;
 }
 
+#skill .row {
+  width: 95%;
+  margin: auto;
+}
+
 .skill-description-image {
-  width: 535px;
-  height: 429px;
+  width: 470px;
+  height: 400px;
 }
 
 .skill-description-content {
@@ -705,7 +712,7 @@ section {
 .testimonial-text {
   font-size: 3rem;
   line-height: 1.5;
-  min-height: 144px;
+  min-height: 200px;
 }
 
 .quick-view.review .big-heading {
@@ -769,6 +776,7 @@ section {
 }
 
 /* pricing */
+
 .card-deck {
   display: flex;
   justify-content: center;
@@ -908,11 +916,10 @@ section {
 .quick-view {
   border-radius: 20px;
   position: fixed;
-  left: 12.8%;
-  right: 50px;
-  top: 40px;
+  left: 13%;
+  top: 6.4%;
   width: 73.2%;
-  height: 550px;
+  height: 88%;
   background-color: whitesmoke;
   z-index: 1000;
 }

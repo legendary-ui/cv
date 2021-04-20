@@ -517,6 +517,7 @@ section {
   position: relative;
   width: 320px;
   min-width: 320px;
+  max-width: 320px;
   height: 400px;
   color: #fff;
   background: inherit;

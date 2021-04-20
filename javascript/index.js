@@ -1,11 +1,9 @@
 // toggle navbar lnks
 
-const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar-menu')
+const menu = document.querySelector('.navbar-toggler')
 
 menu.addEventListener('click', function() {
   menu.classList.toggle('is-active')
-  menuLinks.classList.toggle('active')
 })
 
 // skills description
@@ -42,7 +40,8 @@ form.onsubmit = function(e) {
   indicatorHolder.innerHTML = ""
 
   for (var i = 0; i < carouselItemsLength; i++) {
-    var indicatorFrame = '<li data-target="#carouselExampleControls" data-slide-to="' + i + '" class=""></li>';
+    console.log(i);
+    var indicatorFrame = '<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="' + i + '" aria-label="Slide ' + (i + 1) + '"></button>';
     indicatorHolder.innerHTML = indicatorHolder.innerHTML + indicatorFrame
   }
 
@@ -82,7 +81,10 @@ overlay.addEventListener("click", function() {
   }
 })
 
+
 document.querySelector(".html.neon-switch").click()
+
+// navbar
 
 // hiding navbar on scroll down, show navbar on scroll up
 var prevScrollpos = window.pageYOffset;
@@ -91,16 +93,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.querySelector(".navbar").style.top = "0";
   } else {
-    document.querySelector(".navbar").style.top = "-100px";
+    document.querySelector(".navbar").style.top = "-85px";
   }
   prevScrollpos = currentScrollPos;
 }
-
-// Smooth sliding navbar Links
-$(document).on('click', 'a[href^="#"]', function (event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 700);
-});

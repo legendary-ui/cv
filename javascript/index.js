@@ -84,6 +84,13 @@ overlay.addEventListener("click", function() {
 
 document.querySelector(".html.neon-switch").click()
 
+var purchaseButton = document.querySelectorAll(".purchase-button")
+for (var i = 0; i < purchaseButton.length; i++) {
+  purchaseButton[i].addEventListener("click", function() {
+    alert("Oops, Feature Under Work, Try again Later!")
+  })
+}
+
 // navbar
 
 // hiding navbar on scroll down, show navbar on scroll up

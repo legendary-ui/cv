@@ -22,7 +22,7 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
+
   <!-- favicon -->
   <link rel="icon" href="favicon/light_ultima_favicon.ico">
 </head>
@@ -30,6 +30,8 @@
 <body>
 
   <span class="overlay target"></span>
+
+  <!-- navbar -->
 
   <nav class="navbar navbar-expand-lg bg-dark">
     <div class="container-fluid">
@@ -72,13 +74,14 @@
     </div>
   </nav>
 
+  <!-- title -->
+
   <section id="title">
     <div class="main-container">
       <div class="main-content">
         <h1 class="big-heading">Get your own personalized and proffesionally built website.</h1>
         <input class="neon-switch" type="checkbox" name="" value="">
       </div>
-
       <div class="templates">
         <img class="template-image" src="images/JCC_website.PNG">
         <img class="template-image" src="images/evnotion.PNG">
@@ -89,57 +92,50 @@
 
   <!-- Features -->
 
-  <section id="features" style="padding: 2% 4%;">
-
+  <section id="features">
     <div class="center-wrapper">
       <h2 class="big-heading">Why Us?</h2>
     </div>
-
     <div class="row">
-
       <div class="feature-box col col-lg-4 col-md-6 col-sm-12">
         <i class="icon far fa-check-circle fa-4x"></i>
         <h3 class="feature-title">Easy to colaborate</h3>
         <p>Contact Us whenever you like!</p>
       </div>
-
       <div class="feature-box col-lg-4 col-md-6 col-sm-12">
         <i class="icon fas fa-bullseye fa-4x"></i>
         <h3 class="feature-title">Elite Clientele</h3>
         <p>We have all the code, the greatest codes.</p>
       </div>
-
       <div class="feature-box col-lg-4 col-md-12 col-sm-12">
         <i class="icon far fa-heart fa-4x"></i>
         <h3 class="feature-title">Satisfactory</h3>
         <p>Get satisfied by our work or get your money back.</p>
       </div>
-
     </div>
   </section>
 
+  <!-- about -->
+
   <section id="about">
-    <div class="main">
-      <div class="main-container">
-        <div class="main-img--container">
-          <img src="images//business.svg" alt="pic" id="main-img">
-        </div>
-        <div class="main-content" style="padding-left: 65px;">
-          <h1 class="big-heading">About Us</h1>
-          <p>Apex Ultima, 9th Graders with High Dreams of becoming FullStack Programmers in the near Future. </p>
-        </div>
-      </div>
+    <div class="main-content">
+      <h1 class="big-heading">About Us</h1>
+      <p>Apex Ultima, 9th Graders with High Dreams of becoming FullStack Programmers in the near Future. </p>
+    </div>
+    <div class="code_chunks">
+      <img src="images/css.PNG" alt="">
+      <img src="images/html.PNG" alt="">
+      <img src="images/javascript.PNG" alt="">
     </div>
   </section>
 
   <!-- skills and assets -->
 
-  <section id="skills" style="padding: 30px 0 100px;">
-
+  <section id="skills">
     <h3 class="big-heading center-wrapper">What We Can Do...</h3>
 
     <div class="row">
-      <div class="skill-box-button col col-lg-4">
+      <div class="skill-box-button col col-lg-4 col-md-7">
         <div class="skill-box">
           <input class="description-btn html neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
         </div>
@@ -151,7 +147,7 @@
         </div>
       </div>
 
-      <div class="skill-box-button col col-lg-2">
+      <div class="skill-box-button col col-lg-2 col-md-1">
         <div class="skill-box">
           <input class="description-btn html neon-switch" type="radio" name="skill-button" onclick="getSkillDiv(getSecondPart(this.getAttribute('class')))">
         </div>
@@ -164,6 +160,7 @@
       </div>
 
       <div class="skill-box-description col col-lg-6">
+
         <div class="skill html">
           <div class="skill-wrapper">
             <img class="skill-description-image" src="images/html.PNG" alt="Not found">
@@ -229,15 +226,13 @@
             </div>
           </div>
         </div>
+
       </div>
-
     </div>
-
   </section>
 
 
   <section id="pricing">
-
     <div class="center-wrapper">
       <h2 class="big-heading">A Plan for Every Customer's Needs</h2>
       <p>Simple and affordable price plans for you.</p>
@@ -281,50 +276,123 @@
           <button type="button" class="btn pro btn-dark btn-lg btn-block" onclick="sortQuickView(getSecondPart(this.getAttribute('class')));">Sign Up</button>
         </div>
       </div>
-
     </div>
-
   </section>
 
   <section class="quick-view-section">
     <div class="quick-view starters" hidden>
-
       <div class="quick-view-content">
         <h1>Starters</h1>
-
         <div class="row">
           <div class="col col-lg-6 col-md-12 col-sm-12">
-            <h3>Free</h3>
-            <p>5 Options Per Website</p>
-            <p>10 Messages Per Day</p>
-            <p>Gaurenteed to Finish Before 4 Months </p>
-            <p><strong><em>Please note that this is a one time deal!</em></strong></p>
+            <form class="purchase_form" id="" name="" onsubmit="mailto:murshidazmal@gmail.com" method="post" enctype="text/plain">
+              <h3>Make your Order here!</h3>
+              <div class="block review-input">
+                <p class="inline">Your Name : </p><input type="text" class="review-text-adjust">
+              </div>
+              <div class="block review-input">
+                <p class="inline">Your Email : </p><input type="text" class="review-text-adjust">
+              </div>
+              <div class="block review-input">
+                <p class="inline">Your Theme: </p><textarea name="name" class="" rows="3" cols="45"></textarea>
+              </div>
+              <p><em>Or You Can Contact me directly.</em></p>
+            </form>
           </div>
 
-          <div class="col col-lg-6 col-md-12 col-sm-12">
-            <h3>Free</h3>
-            <p>5 Options Per Website</p>
-            <p>10 Messages Per Day</p>
-            <p>Gaurenteed to Finish Before 4 Months </p>
-            <p><strong><em>Please note that this is a one time deal!</em></strong></p>
+          <div class="purchase_contacts col col-lg-6 col-md-12 col-sm-12">
+            <h3>Contacts</h3>
+            <table>
+              <tr>
+                <p> <em>Use these if you want to contact me directly</em> </p>
+              </tr>
+              <tr>
+                <td>
+                  <p>Discord ID</p>
+                </td>
+                <td>
+                  <p>``#8453</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Email</p>
+                </td>
+                <td>
+                  <p>murshidazmal@gmail.com</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Phone-number</p>
+                </td>
+                <td>
+                  <p>080-3574-6968</p>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
-
         <div class="gradient-wrapper">
           <input type="button" value="Purchase" class="purchase starters purchase-button btn" onclick="">
         </div>
       </div>
-
       <input type="button" value="Exit" class="toggle-quick-view starters" onclick="sortQuickView(getSecondPart(this.getAttribute('class')));">
     </div>
 
     <div class="quick-view advanced" hidden>
       <div class="quick-view-content">
         <h1>Advanced</h1>
-        <h2>$15 / Website</h2>
-        <p>10 Options Per Website</p>
-        <p>Unlimited Messages</p>
-        <p>Gaurenteed to Finish Before 2 Months</p>
+        <div class="row">
+          <div class="col col-lg-6 col-md-12 col-sm-12">
+            <form class="purchase_form" id="" name="" onsubmit="mailto:murshidazmal@gmail.com" method="post" enctype="text/plain">
+              <h3>Make your Order here!</h3>
+              <div class="block review-input">
+                <p class="inline">Your Name : </p><input type="text" class="review-text-adjust">
+              </div>
+              <div class="block review-input">
+                <p class="inline">Your Email : </p><input type="text" class="review-text-adjust">
+              </div>
+              <div class="block review-input">
+                <p class="inline">Your Theme: </p><textarea name="name" class="" rows="3" cols="45"></textarea>
+              </div>
+              <p><em>Or You Can Contact me directly.</em></p>
+            </form>
+          </div>
+
+          <div class="purchase_contacts col col-lg-6 col-md-12 col-sm-12">
+            <h3>Contacts</h3>
+            <table>
+              <tr>
+                <p> <em>Use these if you want to contact me directly</em> </p>
+              </tr>
+              <tr>
+                <td>
+                  <p>Discord ID</p>
+                </td>
+                <td>
+                  <p>``#8453</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Email</p>
+                </td>
+                <td>
+                  <p>murshidazmal@gmail.com</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Phone-number</p>
+                </td>
+                <td>
+                  <p>080-3574-6968</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
         <div class="gradient-wrapper">
           <input type="button" value="Purchase" class="purchase advanced purchase-button btn" onclick="">
         </div>
@@ -335,11 +403,56 @@
     <div class="quick-view pro" hidden>
       <div class="quick-view-content">
         <h1>Pro</h1>
-        <h2>$20 / Website</h2>
-        <p>Pirority Listing</p>
-        <p>Unlimited Options</p>
-        <p>Unlimited Messages</p>
-        <p>Gaurenteed to Finish Before 1 Month!</p>
+        <div class="row">
+          <div class="col col-lg-6 col-md-12 col-sm-12">
+            <form class="purchase_form" id="" name="" onsubmit="mailto:murshidazmal@gmail.com" method="post" enctype="text/plain">
+              <h3>Make your Order here!</h3>
+              <div class="block review-input">
+                <p class="inline">Your Name : </p><input type="text" class="review-text-adjust">
+              </div>
+              <div class="block review-input">
+                <p class="inline">Your Email : </p><input type="text" class="review-text-adjust">
+              </div>
+              <div class="block review-input">
+                <p class="inline">Your Theme: </p><textarea name="name" class="" rows="3" cols="45"></textarea>
+              </div>
+              <p><em>Or You Can Contact me directly.</em></p>
+            </form>
+          </div>
+
+          <div class="purchase_contacts col col-lg-6 col-md-12 col-sm-12">
+            <h3>Contacts</h3>
+            <table>
+              <tr>
+                <p> <em>Use these if you want to contact me directly</em> </p>
+              </tr>
+              <tr>
+                <td>
+                  <p>Discord ID</p>
+                </td>
+                <td>
+                  <p>``#8453</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Email</p>
+                </td>
+                <td>
+                  <p>murshidazmal@gmail.com</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Phone-number</p>
+                </td>
+                <td>
+                  <p>080-3574-6968</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
         <div class="gradient-wrapper">
           <input type="button" value="Purchase" class="purchase pro purchase-button btn" onclick="">
         </div>
@@ -349,14 +462,12 @@
 
     <div class="quick-view review" hidden>
       <!-- add review -->
-
       <div class="container-fluid">
-
         <div class="center-wrapper">
           <h2 class="big-heading">Share Us Your Experience!</h2>
         </div>
 
-        <div class="review-wrapper" style="margin:auto;">
+        <div class="review-wrapper">
           <form class="" id="jsReviewForm" name="jsReviewForm" onsubmit="mailto:murshidazmal@gmail.com" method="post" enctype="text/plain">
             <div class="block review-input">
               <p class="inline">Your Name : </p><input type="text" class="jsReviewName review-text-adjust">
@@ -379,25 +490,20 @@
 
         <input type="button" value="Exit" class="toggle-quick-view review" onclick="sortQuickView(getSecondPart(this.getAttribute('class')));">
       </div>
-
-    </div>
     </div>
   </section>
 
   <!-- feedbacks -->
 
   <section id="testimonials">
-
     <div class="center-wrapper">
       <h2 class="big-heading">See our Customers' Reviews!</h2>
     </div>
-
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-
       <div class="carousel-inner jsCarousel">
         <div class="carousel-item container-fluid active">
           <h2 class="testimonial-text">Nice work, really satified with your outcome!</h2>
@@ -410,7 +516,6 @@
           <em>AnounymousFriend, Tokyo</em>
         </div>
       </div>
-
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -420,41 +525,33 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-  </section>
-
-  <section style="text-align: center;">
-    <input type="button" value="Add A Review" class="toggle-quick-view review btn btn-outline-primary btn-lg" onclick="sortQuickView(getSecondPart(this.getAttribute('class')));" style="position: static; width: 200px;">
+    <input type="button" value="Add A Review" class="toggle-quick-view review btn btn-outline-primary btn-lg" onclick="sortQuickView(getSecondPart(this.getAttribute('class')));" style="position: static; width: 200px; margin-top: 1rem;">
   </section>
 
   <footer id="footer">
-
-    <div class="footer-container">
-      <div class="social__media">
-        <div class="social__media--wrap">
-          <div class="footer__logo">
-            <a href="#" id="footer-logo">
-              <i class="fa fa-code" aria-hidden="true"></i>
-              Apex
-            </a>
+    <div class="footer_container">
+      <div class="social_media">
+        <div class="social_media_wrapper">
+          <div class="footer_logo">
+            <a href="#" id="footer_logo"><i class="fa fa-code" aria-hidden="true"></i>Apex</a>
           </div>
 
-          <p class="website__rights">©Apex 2021. All rights reserved</p>
+          <p class="website_rights">©Apex 2021. All rights reserved</p>
 
-          <div class="social__icons">
-            <a href="#" class="social__icon--link" target="_blank">
+          <div class="social_icons">
+            <a href="#" class="social_icon_link" target="_blank">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="social__icon--link" target="_blank">
+            <a href="#" class="social_icon_link" target="_blank">
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="#" class="social__icon--link" target="_blank">
+            <a href="#" class="social_icon_link" target="_blank">
               <i class="fab fa-twitter"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
-
   </footer>
 
   <script src="javascript/index.js" charset="utf-8"></script>
